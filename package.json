@@ -1,6 +1,6 @@
 {
-  "name": "example",
-  "version": "0.0.0",
+  "name": "plansite",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
