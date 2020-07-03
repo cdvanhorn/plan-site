@@ -11,5 +11,5 @@ COPY . /app
 #we'll only do this for development environment
 RUN npm install
 
-# this should eventually go to a docker compose file
+# this should eventually go to a docker compose file, maybe not
 CMD ng serve
