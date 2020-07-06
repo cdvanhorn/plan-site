@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { EntitiesComponent } from './entities/entities.component';
+import { EntriesComponent } from './entries/entries.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntitiesComponent
+    EntriesComponent
   ],
   imports: [
     BrowserModule
