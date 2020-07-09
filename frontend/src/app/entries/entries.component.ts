@@ -8,15 +8,17 @@ import {State} from '../models/state.enum';
   styleUrls: ['./entries.component.css']
 })
 export class EntriesComponent implements OnInit {
-  entry: Entry = {
-    id: '1',
-    who: 'david',
-    notes: 'Working on learning Angular.',
-    tasks: [
-      {id: '1', text: 'foo', closed: null, state: State.Noted}
-    ],
-    date: new Date()
-  };
+  entries: Entry[] = [
+    {
+      id: '1',
+      who: 'steve',
+      notes: 'Working on learning Angular.',
+      tasks: [
+        {id: '1', text: 'foo', closed: null, state: State.Noted}
+      ],
+      date: new Date()
+    }
+  ];
 
   constructor() { }
 

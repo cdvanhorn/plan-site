@@ -1,0 +1,12 @@
+<div>
+    <div>Who: {{entry.who}}</div>
+    <div>Date: {{entry.date}}</div>
+    <div>Notes: {{entry.notes}}</div>
+    <div *ngIf="entry.tasks">
+        <ul>
+            <li *ngFor="let task of entry.tasks">
+                <app-task [task]="task"></app-task>
+            </li>
+        </ul>
+    </div>
+</div>
