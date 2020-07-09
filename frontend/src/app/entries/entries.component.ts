@@ -11,8 +11,8 @@ export class EntriesComponent implements OnInit {
   entries: Entry[] = [
     {
       id: '1',
-      who: 'steve',
-      notes: 'Working on learning Angular.',
+      who: 'stevess',
+      notes: 'Working on learning Angular. <br><br>--- steve',
       tasks: [
         {id: '1', text: 'foo', closed: null, state: State.Noted}
       ],

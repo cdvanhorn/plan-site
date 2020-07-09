@@ -1,7 +1,16 @@
-<div>
-    <div>Who: {{entry.who}}</div>
-    <div>Date: {{entry.date}}</div>
-    <div>Notes: {{entry.notes}}</div>
+<div style="font-size: 1em;
+font-family: Menlo, Consolas, Monaco, Inconsolata, 'Courier New', monospace;
+padding: 10px;
+background: #fafafa;
+border: 1px solid #ccc;
+border-radius: 4px;">
+    <div>Login name: {{entry.who}}</div>
+    <div>When: {{entry.date}}</div>
+    <div>Plan:</div>
+    <br>
+    <div [innerHTML]="entry.notes"></div>
+    <br>
+    <div>===T==A=S===K====S========================</div>
     <div *ngIf="entry.tasks">
         <ul>
             <li *ngFor="let task of entry.tasks">
