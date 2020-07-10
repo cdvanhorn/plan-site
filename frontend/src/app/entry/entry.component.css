@@ -1,0 +1,8 @@
+div.entry {
+    font-size: 1em;
+    font-family: Menlo, Consolas, Monaco, Inconsolata, 'Courier New', monospace;
+    padding: 10px;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
