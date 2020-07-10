@@ -1,0 +1,18 @@
+[
+    {
+        "notes": "Still working on Angular, it's been interesting. <br><br>--- steve",
+        "tasks": [
+            {"text": "Create a Service", "closed": null, "state": "Noted"},
+            {"text": "Create a Component", "closed": "07/08/2020", "state": "Finished"},
+            {"text": "Buy a boat", "closed": null, "state": "Discarded"}
+        ],
+        "date": "07/09/2020"
+    },
+    {
+        "notes": "Working on learning Angular. <br><br>--- steve",
+        "tasks": [
+            {"text": "Create a project.", "closed": null, "state": "Finished"}
+        ],
+        "date": "07/07/2020"
+    }
+]
