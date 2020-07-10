@@ -1,16 +1,14 @@
 <div class="entry">
     <div>Login name: {{entry.who}}</div>
-    <div>When: {{entry.date}}</div>
+    <div>When: {{entry.date | date:'fullDate'}}</div>
     <div>Plan:</div>
     <br>
     <div [innerHTML]="entry.notes"></div>
     <br>
     <div>===T==A=S===K====S========================</div>
     <div *ngIf="entry.tasks">
-        <ul>
-            <li *ngFor="let task of entry.tasks">
-                <app-task [task]="task"></app-task>
-            </li>
-        </ul>
+        <div *ngFor="let task of entry.tasks">
+            <app-task [task]="task"></app-task>
+        </div>
     </div>
 </div>

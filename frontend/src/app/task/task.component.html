@@ -1,3 +1,6 @@
-<span>
+<span [ngClass]="{'discard': task.state == state.Discarded}">
+    <span *ngIf="task.state == state.Finished && task.closed === null">*</span>
+    <span *ngIf="task.state == state.Finished && task.closed != null">+</span>
     {{task.text}}
+    <span *ngIf="task.closed != null">({{task.closed |  date:'M/d/yy'}})</span>
 </span>
