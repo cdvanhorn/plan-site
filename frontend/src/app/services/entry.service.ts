@@ -1,21 +1,22 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
 import {Entry} from '../models/entry';
 import {State} from '../models/state.enum';
-import { Observable, of } from 'rxjs';
-//import { planData } from '../../data/plan.json';
 import { planData } from '../../assets/plan/plan.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EntryService {
+  dataUrl: string = 'assets/plan/plan.json';
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  getEntries(): Observable<Entry[]> {
-    //we're going to build an array of entries from some json
+  createEntries(httpData: any): Entry[] {
     let entries: Entry[] = [];
-    for(let data of planData) {
+    for(let data of httpData['planData']) {
       let entry: Entry = {
         id: "0",
         who: "st3v3",
@@ -42,6 +43,10 @@ export class EntryService {
       }
       entries.push(entry);
     }
-    return of(entries);
+    return entries;
+  }
+
+  getEntries(): Observable<any> {
+    return this.httpClient.get(this.dataUrl);
   }
 }

@@ -18,7 +18,7 @@ export class EntriesComponent implements OnInit {
 
   getEntries(): void {
     this.entryService.getEntries().subscribe(data =>
-      this.entries = data
+      this.entries = this.entryService.createEntries(data)
     );
   }
 }
