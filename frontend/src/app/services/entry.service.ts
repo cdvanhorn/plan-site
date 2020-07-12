@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import {Entry} from '../models/entry';
 import {State} from '../models/state.enum';
 import { Observable, of } from 'rxjs';
-import { planData } from '../../data/plan.json';
+//import { planData } from '../../data/plan.json';
+import { planData } from '../../assets/plan/plan.json';
 
 @Injectable({
   providedIn: 'root'
