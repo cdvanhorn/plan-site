@@ -47,3 +47,5 @@ Thumbs.db
 
 #Github token
 TOKEN.txt
+
+.env
